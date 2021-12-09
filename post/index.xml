@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Myblog</title>
+    <link>https://guang401.github.io/post/</link>
+    <description>Recent content in Posts on Myblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 09 Dec 2021 17:03:23 +0800</lastBuildDate><atom:link href="https://guang401.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git常用命令</title>
+      <link>https://guang401.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 09 Dec 2021 17:03:23 +0800</pubDate>
+      
+      <guid>https://guang401.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>拉取远程代码：
+git clone (url) 初始化一个本地仓库
+git init 查看git配置信息
+git config -l git配置本地仓库邮箱、名字
+git config user.email &#39;&#39; git config user.name &#39;&#39; 本地提交到git缓存
+git add . 新增、修改都加到缓存 git add -A 新增、修改、删除都加到缓存 本地从缓存加到文件库
+git commit -m &amp;quot;版本描述&amp;quot; 查看当前git状态信息（是否有文件未提交）
+git status 删除缓存区所有文件
+git rm -r --cached 查看本地添加了哪些远程分支
+git remote 删除本地指定的远程地址
+git remote remove origin 添加到远程地址
+git remote add origin https://xxxx.git </description>
+    </item>
+    
+    <item>
+      <title>Win10通过hugo搭建个人博客</title>
+      <link>https://guang401.github.io/post/win10%E9%80%9A%E8%BF%87hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 09 Dec 2021 17:02:46 +0800</pubDate>
+      
+      <guid>https://guang401.github.io/post/win10%E9%80%9A%E8%BF%87hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>hugo官网下载hugo的windows版本：https://github.com/gohugoio/hugo/releases
+将下载的压缩包解压即可使用，解压路径配置到系统的环境变量中即可运行
+通过hugo version命令进行版本查看，显示对应版本，说明配置成功
+通过hugo new site myblog命令创建文件夹
+通过hugo new post/名字.md命令创建文章文件
+去到https://themes.gohugo.io/进行hugo主题下载
+在themes根目录下执行git clone （url）（url：主题仓库地址）
+在myblog根目录下执行hugo server -t （theme） &amp;ndash;buildDrafts（theme:下载的主题名字）
+启动成功，访问http://localhost:1313/进行本地查看
+放到git，新建仓库，仓库名字（owner）.github.io (owner:账户名字)
+在myblog根目录下执行hugo &amp;ndash;theme=（theme） &amp;ndash;baseUrl=&amp;ldquo;https://（owner）.github.io&amp;rdquo; &amp;ndash;buildDrafts
+之后myblog会新增public文件
+在public根目录：
+ git init 初始化 git add . 添加所有文件 git commit -m &amp;ldquo;第一次提交&amp;rdquo; 提交文件 git remote add origin （url）（url：仓库地址） git push -u origin master 提交到远程分支  现在可以查看提交到git上的个人博客了，访问地址https://（owner）.github.io
+更新博客操作：
+ git add -A git commit -m &amp;ldquo;更新博客&amp;rdquo; git push -f origin master  </description>
+    </item>
+    
+  </channel>
+</rss>
